@@ -31,6 +31,14 @@
 */
 
 //CODE HERE
+const pizza = {
+    name: 'cheese',
+    price: 'free',
+    category: 'entree',
+    popularity: 'first pick',
+    rating: '10',
+    tag: 'kids',
+}
 
 
 
@@ -43,7 +51,8 @@
 */
 
 //CODE HERE
-
+const popularity = firstpick.value {
+}
 
 /*
     Second, log the second tag in your pizza's
@@ -88,7 +97,7 @@
 */
 
 //CODE HERE
-
+const arr_name = [pizza, value, price, tag, rating];
 
 
 //////////////////PROBLEM 4////////////////////
@@ -104,7 +113,7 @@
 */
 
 //CODE HERE
-
+const arr_name = []
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 

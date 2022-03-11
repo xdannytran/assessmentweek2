@@ -30,8 +30,14 @@
 */
 
 //CODE HERE
+class Ticket {
+    constructor(items, orderTime, customerId,){
+        this.status = queued
+    }
+}
 
-
+const updateStatus = newStatus 
+    this.status =
 
 /*
     Create a new instance of your class.

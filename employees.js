@@ -20,9 +20,15 @@
 */
 
 //CODE HERE
-
-
-
+class Employee {
+    construcutor(name,shifts){
+        this.name = Danny;
+        this.shifts = nightShift;
+    }
+    work(){
+    console.log(this.name,this.shift);
+    }
+}
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -34,6 +40,12 @@
 */
 
 //CODE HERE
+class emp0ne {
+    //..
+}
+ let name1= new Name('Jess');
+ let shift= new shift('weekendmornings');
+ 
 
 /*
     Call the `getSchedule` method on the
@@ -41,6 +53,7 @@
 */
 
 //CODE HERE
+const getSchedule = emp0ne
 
 
 /*
@@ -56,6 +69,7 @@
 */
 
 //CODE HERE
+
 
 
 
@@ -83,6 +97,13 @@
 */
 
 //CODE HERE
+class Manger {
+    constructor(new1, new2){
+class Employee extends Manger {
+    super(new1, new2)
+}
+    }
+} 
 
 
 
@@ -98,7 +119,13 @@
 */
 
 //CODE HERE
+class Manger {
+    constructor(name, shift){
+    this,name = Winston;
+    this.shift = weekdaymornings, weekdayafternoon;
+    this.employeee = Cece, Schmidt;
 
+}
 
 /*
     Call the `getEmployees` method on the
@@ -106,7 +133,9 @@
 */
 
 //CODE HERE
-
+const getEmployees = manager {
+    
+}
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
