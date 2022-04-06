@@ -23,12 +23,13 @@
 class Employee {
     construcutor(name,shifts){
         this.name = Danny;
-        this.shifts = nightShift;
+        this.shifts = shifts;
     }
-    work(){
-    console.log(this.name,this.shift);
+    getSchedule (){
+        return console.log(`${this.name} works on ${this.shift}`)
     }
 }
+
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -40,12 +41,9 @@ class Employee {
 */
 
 //CODE HERE
-class emp0ne {
-    //..
-}
- let name1= new Name('Jess');
- let shift= new shift('weekendmornings');
- 
+class emp0ne = new Employee('Jess',['weekend mornings',])
+
+
 
 /*
     Call the `getSchedule` method on the
@@ -53,7 +51,7 @@ class emp0ne {
 */
 
 //CODE HERE
-const getSchedule = emp0ne
+emp0ne.getSchedule()
 
 
 /*
@@ -69,7 +67,10 @@ const getSchedule = emp0ne
 */
 
 //CODE HERE
-
+let empTwo = {...emp0ne}
+console.log(empTwo)
+console.log(emp0ne)
+empTwo.name = "Nick"
 
 
 
@@ -97,13 +98,22 @@ const getSchedule = emp0ne
 */
 
 //CODE HERE
-class Manger {
-    constructor(new1, new2){
-class Employee extends Manger {
-    super(new1, new2)
-}
+class Manger extends Employee {
+    constructor(name, shifts,employee){
+        super(name,shifts)
+
+        this.employees = this.employees
     }
-} 
+
+    getEmployees(){
+        console.log(`${this.name} manges ${this.employees}`)
+    }
+
+    addEmployee(emp){
+        this.employees.push(emp)
+    }
+}
+   
 
 
 
@@ -119,13 +129,8 @@ class Employee extends Manger {
 */
 
 //CODE HERE
-class Manger {
-    constructor(name, shift){
-    this,name = Winston;
-    this.shift = weekdaymornings, weekdayafternoon;
-    this.employeee = Cece, Schmidt;
+let Manager = new Manger("Wiston",["weekend evening',"weekend mornings"],["Cee", "Jess", "Schimit"])
 
-}
 
 /*
     Call the `getEmployees` method on the
@@ -133,9 +138,9 @@ class Manger {
 */
 
 //CODE HERE
-const getEmployees = manager {
+manager.getEmployees()
     
-}
+
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -143,6 +148,7 @@ const getEmployees = manager {
 */
 
 //CODE HERE 
+manager.addEmployee('coach carter')
 
 /*
     Call the `getEmployees` method on the
@@ -151,3 +157,4 @@ const getEmployees = manager {
 */
 
 //CODE HERE
+manager.getEmployees()

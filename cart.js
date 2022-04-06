@@ -34,8 +34,11 @@ const cart = [
 ]
 
 //CODE HERE
-const reduce = numArr.reduce(summedPrice(name, price,)
+const summedPrice = cart.reduce((acc,cv) => {
+    return acc + cv.price
+},0)
 
+console.log(summedPrice)
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
@@ -55,15 +58,11 @@ const reduce = numArr.reduce(summedPrice(name, price,)
 */
 
 //CODE HERE
-const calcFinalPrice = (certain, couponValue, tax) => {
-    for(let i = 0; i < arr.length; i++) {
-      if (arr[i].cartTotal - tax) {
-          return cb(arr[i])
-      }
-    }
-  }
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    return (cartTotal * tax) + cartTotal - couponValue
+}
 
-
+console.log(calcFinalPrice(10,1,0.1))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -87,7 +86,7 @@ const calcFinalPrice = (certain, couponValue, tax) => {
 
 /*
     TEXT ANSWER HERE
-for each
+
 map
 filter
 reduce

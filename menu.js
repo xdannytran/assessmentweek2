@@ -31,15 +31,14 @@
 */
 
 //CODE HERE
-const pizza = {
-    name: 'cheese',
-    price: 'free',
-    category: 'entree',
-    popularity: 'first pick',
-    rating: '10',
-    tag: 'kids',
+let pizza = {
+    name:"perpperoni",
+    price:13,
+    category:"entree",
+    popularity:9,
+    rating:10,
+    tags:["italian","new-haven","popular"]
 }
-
 
 
 //////////////////PROBLEM 2////////////////////
@@ -51,8 +50,7 @@ const pizza = {
 */
 
 //CODE HERE
-const popularity = firstpick.value {
-}
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -62,7 +60,7 @@ const popularity = firstpick.value {
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -72,7 +70,8 @@ const popularity = firstpick.value {
 */
 
 //CODE HERE
-
+let {price: price} pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -82,7 +81,8 @@ const popularity = firstpick.value {
 */
 
 //CODE HERE
-
+let { category } = pizza
+console.log(category) 
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -97,7 +97,48 @@ const popularity = firstpick.value {
 */
 
 //CODE HERE
-const arr_name = [pizza, value, price, tag, rating];
+{   name: 'cheese burger',
+        price; 9,
+        category; 'Lunch',
+        popularity; 7.8,
+        rating; 4.2,
+        tags; ['High carb', 'adult'] 
+
+    },
+    {   name: 'chicken nuggets',
+        price; 7,
+        category; 'Breakfast',
+        popularity; 8.2,
+        rating; 4.00,
+        tags; ['Low calories', 'kid'] 
+
+    },
+    {   name: 'chicken zinger',
+        price; 10.7,
+        category: 'Breakfast',
+        popularity; 9.7,
+        rating; 8.0,
+        tags; ['less fats', 'too spicy'] 
+
+    },
+    {   name: 'pan cake',
+        price; 6.7,
+        category; 'dessert',
+        popularity; 8.6,
+        rating; 7.7,
+        tags; ['High carb', 'whole wheat'] 
+
+    },
+    {   name: 'coffee',
+        price; 3.3,
+        category; 'drink',
+        popularity; 8.9,
+        rating; 8.0,
+        tags; ['high caffiene', 'American coffee'] 
+
+    }
+
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -113,7 +154,8 @@ const arr_name = [pizza, value, price, tag, rating];
 */
 
 //CODE HERE
-const arr_name = []
+const filteredFood = foodArr.filter(item => item.tags.includes.('popular'))
+console.log(filteredFood)
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
@@ -158,8 +200,17 @@ const arr_name = []
 */
 
 //CODE HERE
-
-
+const filterByProperty = (property,number,type) => {
+    let filterArr = foodArr.filter(item => {
+        if(type === 'above'){
+        return item[property] > number
+        } else {
+            return item[property] < number
+        }
+    })
+    return filterArr
+}
+console.log(filterByProperty(price,10,'above'))
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
